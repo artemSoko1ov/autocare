@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light.otf");
+}
+
+body {
+    background-image: url(../img/bg-diag.png);
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 50px 380px;
+    font-family: "Gilroy";
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    background-color: #111111;
+    border-radius: 25px;
+    width: 100%;
+    padding: 43px 55px 43px 55px;
+}
+
+
+
+#diagnosticForm input {
+    width: 445px;
+    height: 28px;
+    background-color: #111111;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 70px;
+    font-size: 19px;
+    padding: 5px;
+    color: white;
+    font-style: italic;
+    font-family: "Gilroy";
+}
+
+.inputDiv {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#butGet {
+    width: 178px;
+    font-size: 20px;
+    height: 35px;
+    margin: auto;
+}
+
+.art {
+    width: 280px;
+    margin-left: 770px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+.document {
+    background-color: white;
+    width: 1100px;
+    height: 1564px;
+    margin: 30px auto;
+    color: black !important;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 24px;
+}
+
+.document h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.document table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 7px 0;
+}
+
+.document table,
+.document th,
+.document td {
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.docDiv1 {
+    display: flex;
+    border: 1px solid black;
+    height: 55px;
+}
+
+.docDiv1 div {
+    width: 50%;
+    padding: 10px;
+}
+
+.docDiv11 {
+    border-right: 1px solid black;
+}
+
+.docDiv1 div p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.regNomdiv2 {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 60px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.regNomdiv1 {
+    display: flex;
+    width: 100%;
+}
+
+p {
+    font-weight: lighter;
+}
+
+button {
+    font-weight: lighter;
+    font-family: "Gilroy";
+}
+
+.num {
+    width: 30px;
+    height: 30px;
+}
+
+.tablee {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.tablee * {
+    border: 1px solid black;
+    height: 100%;
+    padding: 0 3px;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+.thh {
+    font-weight: bold;
+    text-align: center;
+    width: 271px;
+    padding: 2px;
+}
+
+.trr {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.null,
+.num {
+    width: 40px;
+    text-align: center;
+}
+
+#tormoz {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-weight: bold;
+}
+
+#IV {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    text-align: center;
+    font-weight: bold;
+}
+
+#V {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    text-align: center;
+    font-weight: bold;
+}
+
+#VI {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    text-align: center;
+    font-weight: bold;
+}
+
+#VII {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    text-align: center;
+    font-weight: bold;
+}
+
+#III {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-weight: bold;
+}
+#printBut{
+    font-family: "Gilroy";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 64.4px;
+    border: none;
+    background: linear-gradient(120deg, #2962fe, #4b7bff, #2962ff, #1b42ad, #112a70);
+    background-size: 150% 100%;
+    background-position: right;
+    color: white;
+    font-size: 21px;
+    gap: 9px;
+    cursor: pointer;
+    transition: background-position 0.4s ease-in-out;
+    margin: auto;
+}
+#printBut:hover {
+    background-position: left;
+}

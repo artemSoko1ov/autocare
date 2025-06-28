@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    color: white;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Light.otf");
+}
+body {
+    background-image: url(../img/bg-priceList.png);
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+.priceText{
+    padding: 0px 380px;
+}
+.priceText h1{
+    margin-top: 110px;
+    font-size: 48px;
+    font-weight: 600;
+}
+.priceText .p1{
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.priceText .p2{
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 85px;
+}
+
+table {
+    width: 100vw;
+    border-collapse: collapse;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.thin-line {
+    height: 0.5px; 
+    background: #1d45b3;
+    width: 100%;
+}
+.thd1 {
+    padding: 10px 20px 10px 20px;
+    margin-left: 360px;
+    font-size: 28px;
+    float: left;
+    margin-top: -30px;
+    background-color: #111111;
+}
+.thd2 {
+    padding: 10px 20px 10px 20px;
+    margin-right: 360px;
+    font-size: 28px;
+    float: right;
+    margin-top: -28px;
+    background-color: #111111;
+}
+.td1 {
+    font-size: 21px;
+    padding: 10px 0px 10px 380px;
+    float: left;
+}
+.td2 {
+    font-size: 21px;
+    padding: 10px 380px 10px 0px;
+    float: right;
+}
+tbody tr:nth-child(odd) {
+    background-color: #0F0F0F;
+}
+
+tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+#butPrice {
+    margin: 100px auto;
+}
+#secVip h2{
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 500;
+}
+#secVip img{
+    margin-bottom: 140px;
+}
+#secVip{
+    width: 100vw;
+    margin-top: 80px;
+    padding: 0px 380px 0px 380px;
+    margin-bottom: 80px;
+}
+.pVip1{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+#secVip li{
+    font-size: 19px;
+}
+#secVip ul{
+    margin-left: 20px;
+}
+#divForm h1 {
+    margin-left: 20px;
+    font-size: 46px;
+    margin-bottom: 44px;
+}
+@media screen and (max-width: 1024px) {
+    .priceText{
+        padding: 0px 170px;
+    }
+    .priceText h1{
+        margin-top: 60px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .priceText .p1{
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .priceText .p2{
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 45px;
+    }
+    
+    table {
+        width: 100vw;
+        border-collapse: collapse;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .thin-line {
+        height: 0.5px; 
+        background: #1d45b3; 
+        width: 100%;
+    }
+    .thd1 {
+        padding: 10px 20px 10px 20px;
+        margin-left: 150px;
+        font-size: 22px;
+        float: left;
+        margin-top: -30px;
+        background-color: #111111;
+    }
+    .thd2 {
+        padding: 10px 20px 10px 20px;
+        margin-right: 150px;
+        font-size: 22px;
+        float: right;
+
+        margin-top: -28px;
+        background-color: #111111;
+    }
+    .td1 {
+        font-size: 15px;
+        padding: 10px 0px 10px 170px;
+        float: left;
+    }
+    .td2 {
+        font-size: 15px;
+        padding: 10px 170px 10px 0px;
+        float: right;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #0F0F0F;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+    
+    #butPrice {
+        margin: 50px auto;
+    }
+    #secVip h2{
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    #secVip img{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    #secVip{
+        width: 100vw;
+        margin-top: 40px;
+        padding: 0px 140px 0px 140px;
+        margin-bottom: 40px;
+    }
+    .pVip1{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    #secVip li{
+        font-size: 16px;
+    }
+    #secVip ul{
+        margin-left: 20px;
+    }
+    #divForm h1 {
+        margin-left: 20px;
+        font-size: 46px;
+        margin-bottom: 44px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .priceText{
+        padding: 0px 40px;
+    }
+    .priceText h1{
+        margin-top: 60px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .priceText .p1{
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .priceText .p2{
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 45px;
+    }
+    
+    table {
+        width: 100vw;
+        border-collapse: collapse;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .thin-line {
+        height: 0.5px; 
+        background: #1d45b3;
+        width: 100%;
+    }
+    .thd1 {
+        padding: 10px 20px 10px 20px;
+        margin-left: 20px;
+        font-size: 22px;
+        float: left;
+        margin-top: -30px;
+        background-color: #111111;
+    }
+    .thd2 {
+        padding: 10px 20px 10px 20px;
+        margin-right: 20px;
+        font-size: 22px;
+        float: right;
+        margin-top: -28px;
+        background-color: #111111;
+    }
+    .td1 {
+        font-size: 15px;
+        padding: 10px 0px 10px 40px;
+        float: left;
+    }
+    .td2 {
+        font-size: 15px;
+        padding: 10px 40px 10px 0px;
+        float: right;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #0F0F0F;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: transparent;
+    }
+    
+    #butPrice {
+        margin: 50px auto;
+    }
+    #secVip h2{
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #secVip img{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    #secVip{
+        width: 100vw;
+        margin-top: 40px;
+        padding: 0px 140px 0px 140px;
+        margin-bottom: 40px;
+    }
+    .pVip1{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #secVip li{
+        font-size: 14px;
+    }
+    #secVip ul{
+        margin-left: 20px;
+    }
+    #divForm h1 {
+        margin-left: 20px;
+        font-size: 46px;
+        margin-bottom: 44px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #secVip img{
+        margin: auto;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    #secVip{
+        width: 100vw;
+        margin-top: 40px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 40px;
+    }
+}

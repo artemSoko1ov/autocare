@@ -1,0 +1,588 @@
+#secForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 70px 60px 161px 380px;
+    column-gap: 160px;
+    margin-top: 50px;
+}
+
+#divForm h1 {
+    margin-left: 20px;
+    font-size: 48px;
+}
+
+#divForm1 {
+    padding: 20px;
+    gap: 120px;
+    height: 600px;
+    width: 500px;
+}
+
+#divForm1 h2 {
+    font-size: 40px;
+    width: 466px;
+    margin-bottom: 100px;
+}
+
+.divForm2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 5px;
+    width: 110%;
+}
+
+.divForm2 div {
+    width: 110%;
+}
+
+.divForm2 div h4 {
+    font-size: 19px;
+    margin-bottom: 17px;
+}
+
+.divForm2 div p {
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.divForm_4 a {
+    margin-right: 5px;
+}
+
+#secForm #contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    background-color: #111111;
+    border-radius: 25px;
+    width: 837px;
+    height: 780px;
+    padding: 43px 342px 46px 55px;
+}
+
+.formaHtext {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 46px;
+}
+
+.formaText {
+    width: 464px;
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+
+#contactForm input[type="text"] {
+    width: 445px;
+    height: 28px;
+    background-color: #111111;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 70px;
+    font-size: 19px;
+    padding: 5px;
+    color: white;
+    font-style: italic;
+}
+
+#contactForm select {
+    width: 445px;
+    height: 28px;
+    background-color: #111111;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 70px;
+    font-size: 19px;
+    padding: 2px;
+    color: white;
+    font-style: italic;
+}
+
+#contactForm textarea {
+    width: 445px;
+    height: 30px;
+    background-color: #111111;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 70px;
+    font-size: 19px;
+    padding: 5px;
+    color: white;
+    resize: none;
+    display: block;
+    font-style: italic;
+}
+
+.bg-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    background-image: url(../img/bg-modal.png);
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 11;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #111111d8;
+    border-radius: 100%;
+    transition: background-color 0.3s;
+}
+
+.close-modal:hover {
+    background-color: rgba(255, 0, 0, 0.631);
+}
+
+.modal h2,
+.modal p {
+    margin-bottom: 10px;
+}
+
+.modal textarea {
+    width: 320px;
+    height: 170px;
+    background-color: #111111;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 19px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.modal select {
+    width: 320px;
+    background-color: #111111;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 19px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#submitReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(120deg, #2962fe, #4b7bff, #2962ff, #1b42ad, #112a70);
+    background-size: 150% 100%;
+    background-position: right;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-position 0.4s ease-in-out;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#submitReview:hover {
+    background-position: left;
+}
+
+.thank-you-message {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+.btnDiagnost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 64.4px;
+    border: none;
+    background: linear-gradient(120deg, #2962fe, #4b7bff, #2962ff, #1b42ad, #112a70);
+    background-size: 150% 100%;
+    background-position: right;
+    color: white;
+    font-size: 18px;
+    gap: 9px;
+    cursor: pointer;
+    transition: background-position 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #secForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 40px 60px 61px 160px;
+        column-gap: 100px;
+        margin-top: 30px;
+    }
+
+    #divForm h1 {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+
+    #divForm1 {
+        padding: 20px;
+        gap: 100px;
+        height: 400px;
+        width: 300px;
+    }
+
+    #divForm1 h2 {
+        font-size: 22px;
+        width: 110%;
+        margin-bottom: 60px;
+    }
+
+    .divForm2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 5px;
+        width: 110%;
+    }
+
+    .divForm2 div {
+        width: 110%;
+    }
+
+    .divForm2 div h4 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .divForm2 div p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .divForm_4 a {
+        margin-right: 5px;
+    }
+
+    #secForm #contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+        background-color: #111111;
+        border-radius: 15px;
+        width: 437px;
+        height: 390px;
+        padding: 23px 142px 16px 25px;
+    }
+
+    .formaHtext {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .formaText {
+        width: 264px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    #contactForm input[type="text"] {
+        width: 285px;
+        height: 18px;
+        background-color: #111111;
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+        font-size: 14px;
+        padding: 5px;
+        color: white;
+        font-style: italic;
+    }
+
+    #contactForm select {
+        width: 285px;
+        height: 22px;
+        background-color: #111111;
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+        font-size: 14px;
+        padding: 2px;
+        color: white;
+        font-style: italic;
+    }
+
+    #contactForm textarea {
+        width: 285px;
+        height: 30px;
+        background-color: #111111;
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 40px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .bg-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .modal {
+        position: relative;
+        width: 380px;
+        height: 380px;
+        background-image: url(../img/bg-modal.png);
+        padding: 20px;
+        border-radius: 20px;
+        z-index: 11;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        margin-right: 20px;
+        height: 50px;
+        width: 50px;
+        background-color: #111111d8;
+        border-radius: 100%;
+        transition: background-color 0.3s;
+    }
+
+    .close-modal:hover {
+        background-color: rgba(255, 0, 0, 0.631);
+    }
+
+    .modal h2,
+    .modal p {
+        margin-bottom: 10px;
+    }
+
+    .modal textarea {
+        width: 320px;
+        height: 170px;
+        background-color: #111111;
+        border: none;
+        border-bottom: 1px solid white;
+        font-size: 19px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .modal select {
+        width: 320px;
+        background-color: #111111;
+        border: none;
+        border-bottom: 1px solid white;
+        font-size: 19px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    #submitReview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        background: linear-gradient(120deg, #2962fe, #4b7bff, #2962ff, #1b42ad, #112a70);
+        background-size: 150% 100%;
+        background-position: right;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-position 0.4s ease-in-out;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #submitReview:hover {
+        background-position: left;
+    }
+
+    .thank-you-message {
+        font-size: 18px;
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+    }
+
+
+    .btnDiagnost {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 64.4px;
+        border: none;
+        background: linear-gradient(120deg, #2962fe, #4b7bff, #2962ff, #1b42ad, #112a70);
+        background-size: 150% 100%;
+        background-position: right;
+        color: white;
+        font-size: 18px;
+        gap: 9px;
+        cursor: pointer;
+        transition: background-position 0.4s ease-in-out;
+    }
+}
+@media screen and (max-width: 480px) {
+    #secForm {
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    #divForm h1 {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #divForm1 {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    #divForm1 h2 {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .divForm2 {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .divForm2 div {
+        width: 100%;
+    }
+
+    .divForm2 div h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .divForm2 div p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Форма обратной связи */
+    #secForm #contactForm {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .formaHtext {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .formaText {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    #contactForm input[type="text"],
+    #contactForm select,
+    #contactForm textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    #contactForm textarea {
+        height: 80px;
+    }
+
+    .modal {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .modal textarea,
+    .modal select {
+        width: 100%;
+    }
+
+    .btnDiagnost {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #submitReview {
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+}

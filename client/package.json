@@ -12,7 +12,15 @@
     "lint:styles:fix": "stylelint \"src/**/*.{css,scss}\" --fix --allow-empty-input",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint-staged": "lint-staged --relative"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": "prettier --write"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.99.0",
@@ -36,6 +44,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.3",
     "sass": "^1.99.0",
     "stylelint": "^16.25.0",

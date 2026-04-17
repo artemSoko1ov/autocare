@@ -4,6 +4,11 @@
     "target": "es2023",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "esnext",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@app/*": ["./src/app/*"],
+      "@styles/*": ["./src/app/style/*"]
+    },
     "types": ["vite/client"],
     "skipLibCheck": true,
 

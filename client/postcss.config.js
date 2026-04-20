@@ -4,7 +4,7 @@ import postcssPxToRem from "postcss-pxtorem";
 export default {
   plugins: [
     postcssPresetEnv({
-      stage: 3
+      stage: 3,
     }),
     postcssPxToRem({
       rootValue: 16,
@@ -12,7 +12,7 @@ export default {
       unitPrecision: 5,
       minPixelValue: 1,
       mediaQuery: false,
-      replace: true
-    })
-  ]
+      replace: true,
+    }),
+  ],
 };

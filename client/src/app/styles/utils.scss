@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-padding-y);
+}
+
+.section--alt {
+  background-color: var(--color-bg-secondary);
+}
+
+.surface {
+  background-color: var(--color-bg-base);
+  border: var(--border);
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--shadow-medium);
+}
+
+.surface--muted {
+  background-color: var(--color-bg-card);
+}
+
+.pill {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.625rem 0.875rem;
+  color: var(--color-text-heading);
+  background-color: var(--color-bg-accent);
+  border-radius: var(--border-radius-pill);
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.visible-tablet {
+  @include tablet-above {
+    display: none !important;
+  }
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}

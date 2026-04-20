@@ -4,11 +4,17 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "@/app/styles/helpers" as *;',
+        silenceDeprecations: ["legacy-js-api"],
+      },
+    },
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "@app": fileURLToPath(new URL("./src/app", import.meta.url)),
-      "@styles": fileURLToPath(new URL("./src/app/style", import.meta.url)),
     },
     tsconfigPaths: true,
   },
